@@ -29,7 +29,7 @@ namespace Kaspersky.SafeBoard
                 }
             }
             else{
-                Console.WriteLine("No Data");
+                Console.WriteLine("No data");
             }
 
           
