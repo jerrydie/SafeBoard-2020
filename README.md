@@ -8,21 +8,14 @@
 
 Для того чтобы их обрабатывать мушкетеры дали Д'Артаньяну enum:
 
-public enum DataType
-
-{
-
+{public enum DataType
+\{
     None = 0,
-    
     First = 1,
-    
     Second = 2,
-    
     Third = 3,
-    
     Fourth = 4
-    
-}
+\}}
 
 Сервис этот шлет текстовые данные, разделенные запятыми. Например такие: First,Third,Second,Second,1.
 
