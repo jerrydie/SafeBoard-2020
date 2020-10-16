@@ -8,14 +8,14 @@
 
 Для того чтобы их обрабатывать мушкетеры дали Д'Артаньяну enum:
 
-{public enum DataType
-\{
-    None = 0,
-    First = 1,
-    Second = 2,
-    Third = 3,
-    Fourth = 4
-\}}
+>public enum DataType
+>\{
+>    None = 0,
+>    First = 1,
+>    Second = 2,
+>    Third = 3,
+>    Fourth = 4
+>\}
 
 Сервис этот шлет текстовые данные, разделенные запятыми. Например такие: First,Third,Second,Second,1.
 
@@ -23,21 +23,14 @@
 
 Всё бы ничего, но сервис иногда присылает не пойми что. Поэтому вы решаете что нужно обработать эти данные и предоставить информацию о них и об ошибках в виде отчета. Отчет должен выглядеть так:
 
-Input data types:
-
-None(0)-0
-
-First(1)-2
-
-Second(2)-2
-
-Third(3)-1
-
-Fourth(4)-0
-
-Errors:
-
-Not valid input strings: Ten,wfsdf
+>Input data types:
+>None(0)-0
+>First(1)-2
+>Second(2)-2
+>Third(3)-1
+>Fourth(4)-0
+>Errors:
+>Not valid input strings: Ten,wfsdf
 
 В скобках значение enum-a, через тире количество вхождений в предоставленный список, затем выводятся ошибки через запятую (если есть).
 
